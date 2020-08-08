@@ -19,7 +19,7 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="	https://api.softwareavanzado.world/index.php?webserviceClient=administrator&amp;webserviceVersion=1.0.0&amp;option=contact&amp;api=soap&amp;wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address=" https://api.softwareavanzado.world/index.php?webserviceClient=administrator&amp;webserviceVersion=1.0.0&amp;option=contact&amp;api=soap&amp;wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="index.wsdl" MetadataType="Wsdl" ID="a1a3b235-65bc-44de-b264-bcd59d34f523" SourceId="1" SourceUrl="https://api.softwareavanzado.world/index.php?webserviceClient=administrator&amp;webserviceVersion=1.0.0&amp;option=contact&amp;api=soap&amp;wsdl" />
