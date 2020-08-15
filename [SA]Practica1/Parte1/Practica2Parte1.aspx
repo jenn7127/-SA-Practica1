@@ -10,7 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar Contactos" />
         </div>
+        <p>
+            <asp:Label ID="lblLista" runat="server"></asp:Label>
+        </p>
     </form>
 </body>
 </html>

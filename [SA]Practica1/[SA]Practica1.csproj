@@ -45,11 +45,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="RestSharp, Version=106.11.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
@@ -108,9 +112,119 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <None Include="Connected Services\SA_Ap13\index.wsdl" />
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.createResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.deleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.readItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.readItemResponse_item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.readListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.readListResponse_list_item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_applyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_checkinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_checkoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_deleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_featuredResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_publishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_saveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_unfeaturedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.task_unpublishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_Ap13\_SA_Practica1.SA_Ap13.updateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SA_ApiP2\index.wsdl" />
+    <None Include="Connected Services\SA_Ap13\configuration91.svcinfo" />
+    <None Include="Connected Services\SA_Ap13\configuration.svcinfo" />
+    <None Include="Connected Services\SA_Ap13\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.createResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.deleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.readItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.readItemResponse_item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.readListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.readListResponse_list_item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_applyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_checkinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_checkoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_deleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_featuredResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_publishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_saveResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_unfeaturedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.task_unpublishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\SA_ApiP2\_SA_Practica1.SA_ApiP2.updateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\SA_API\configuration91.svcinfo" />
     <None Include="Connected Services\SA_API\configuration.svcinfo" />
     <None Include="Connected Services\SA_API\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\SA_ApiP2\configuration91.svcinfo" />
+    <None Include="Connected Services\SA_ApiP2\configuration.svcinfo" />
+    <None Include="Connected Services\SA_ApiP2\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -181,6 +295,10 @@
     <Content Include="Connected Services\SA_API\_SA_Practica1.SA_API.updateResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.3.1-vsdoc.js" />
     <Content Include="Parte1\Practica2Parte1.aspx" />
     <Content Include="Parte2\parctica2Parte2.aspx" />
@@ -228,6 +346,16 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\SA_Ap13\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SA_ApiP2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\SA_API\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -250,6 +378,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Parte1\contacto.cs" />
     <Compile Include="Parte1\Practica2Parte1.aspx.cs">
       <DependentUpon>Practica2Parte1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -265,6 +394,11 @@
       <DependentUpon>parctica2Parte2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -279,6 +413,7 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="SoapAuthHeader.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -305,7 +440,12 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SA_Ap13\" />
+    <WCFMetadataStorage Include="Connected Services\SA_ApiP2\" />
     <WCFMetadataStorage Include="Connected Services\SA_API\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -9,15 +9,23 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <br />
-            Contraseña:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <br />
-            <asp:Button ID="btnAutenticar" runat="server"  Text="Login" Height="29px" Width="69px" />
-        </div>
-        <p>
-            Usuario:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            </p>
+    <div class="jumbotron">
+        <h3>Agregar contacto</h3>
+
+        <p class="lead">Nombre: 
+            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+        </p>
+        <p class="lead">
+            <asp:Button ID="btnAgregar" runat="server" OnClick="btnAgregar_Click" Text="Agregar" />
+        </p>
+        <h3>Listas de contactos</h3>
+        <p class="lead">
+            <asp:Button ID="btnLista" runat="server" OnClick="btnLista_Click" Text="Mostar Lista" />
+        </p>
+        <p class="lead">
+            <asp:Label ID="lblTabla" runat="server"></asp:Label>
+        </p>
+    </div>
     </form>
 </body>
 </html>

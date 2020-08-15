@@ -71,3 +71,5 @@ D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\obj\Debug\[SA]Practica1.c
 D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\obj\Debug\[SA]Practica1.csproj.CopyComplete
 D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\obj\Debug\[SA]Practica1.dll
 D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\obj\Debug\[SA]Practica1.pdb
+D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\bin\RestSharp.dll
+D:\Tareas\SA\LAB\Practica1\[SA]Practica1\[SA]Practica1\bin\RestSharp.xml
